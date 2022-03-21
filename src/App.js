@@ -1,7 +1,12 @@
+import { Layout } from "./components/Layout";
+import GlobalStyles from "./styles/global";
 
 function App() {
   return (
-    <h1>Hello world</h1>
+    <>
+    <GlobalStyles />
+    <Layout />
+    </>
   );
 }
 
