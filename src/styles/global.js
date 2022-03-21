@@ -34,10 +34,9 @@ body{
   }
 }
 
-svg,img{
-  width: 100%;
-  //height: auto;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 `;
