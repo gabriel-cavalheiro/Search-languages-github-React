@@ -5,44 +5,39 @@ import Timeicon from '../../assets/icon-clock.svg';
 import Codeicon from '../../assets/icon-code.svg';
 import GithubIcon from '../../assets/icon-github-purple.svg';
 
-export function CardRepo() {
+export function CardRepo({
+  title, name, stars, date, language, description, url,
+}) {
   return (
     <ContainerCard>
       <header>
         <UserProfile />
-        <TitleRepo>Teste de título</TitleRepo>
+        <TitleRepo>{title}</TitleRepo>
       </header>
       <ul>
         <li>
           <img src={Usericon} alt="ícone usuário" />
-          {' '}
-          Gabriel Cavalheiro
+          {name}
         </li>
         <li>
           <img src={Staricon} alt="ícone usuário" />
-          {' '}
-          1343653
+          {stars}
         </li>
         <li>
           <img src={Timeicon} alt="ícone usuário" />
-          {' '}
-          2020-09-23
+          {date}
         </li>
         <li>
           <img src={Codeicon} alt="ícone usuário" />
-          {' '}
-          Javascript
+          {language}
         </li>
       </ul>
       <span>Descrição:</span>
       <h5>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Quos molestias officia sequi facilis enim earum suscipit ea
-        pariatur placeat excepturi, dolorem, necessitatibus quidem
-        saepe
+        {description}
       </h5>
 
-      <a href="/">
+      <a href={`/${url}`}>
         <img src={GithubIcon} alt="Ícone do Github" />
         Ver repositório
       </a>

@@ -19,7 +19,14 @@ export function MainHero() {
           <img src={ArrowImg} alt="ícone de seta" />
         </Button>
       </SectionText>
-      <CardRepo />
+      <CardRepo
+        title="Titulo-de-teste-para-repositorio"
+        name="Gabriel Cavalheiro"
+        stars="2345"
+        date="2020-09-23"
+        language="javascript"
+        description="kjdbiuadfmkabdiufh ajskbl nqa iljab lflakhdciusabdlS KIuagdiAJBDilagd blAISHDGiash "
+      />
     </ContainerMain>
   );
 }
