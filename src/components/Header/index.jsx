@@ -9,7 +9,9 @@ export function Header() {
     <HeaderContainer>
       <DivLogo>
         <img src={logoImg} alt="Logo do site" />
-        <Title>GithubLanguages</Title>
+        <a href="/">
+          <Title>GithubLanguages</Title>
+        </a>
       </DivLogo>
       <Button href="https://github.com/gabriel-cavalheiro/Search-languages-github-react" target="_blank">
         <img src={IconGithub} alt="logo do site" />

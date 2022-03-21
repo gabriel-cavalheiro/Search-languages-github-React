@@ -1,5 +1,9 @@
+import { ContainerFooter } from './styles';
+
 export function Footer() {
   return (
-    <div>footer</div>
+    <ContainerFooter>
+      <span>Feito por Gabriel Cavalheiro</span>
+    </ContainerFooter>
   );
 }

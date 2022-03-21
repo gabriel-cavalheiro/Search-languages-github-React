@@ -14,7 +14,7 @@ export function MainHero() {
         {' '}
         <SpanColor>linguagem favorita ?</SpanColor>
 
-        <Button href="/">
+        <Button href="/search">
           Buscar Linguagem
           <img src={ArrowImg} alt="ícone de seta" />
         </Button>

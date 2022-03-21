@@ -1,11 +1,12 @@
-import { Layout } from "./components/Layout";
-import GlobalStyles from "./styles/global";
+/* eslint-disable react/jsx-filename-extension */
+import { Paths } from './Paths';
+import GlobalStyles from './styles/global';
 
 function App() {
   return (
     <>
-    <GlobalStyles />
-    <Layout />
+      <GlobalStyles />
+      <Paths />
     </>
   );
 }

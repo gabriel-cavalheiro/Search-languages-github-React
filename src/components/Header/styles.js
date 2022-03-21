@@ -23,6 +23,10 @@ export const DivLogo = styled.div`
       transform: scale(1.1);
     }
   }
+
+  a {
+    color: #fafafa;
+  }
 `;
 
 export const Title = styled.h3`
