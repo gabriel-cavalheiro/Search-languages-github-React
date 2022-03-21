@@ -5,12 +5,12 @@ import { debounce } from 'lodash';
 
 export const RepositorieContext = createContext();
 
-export function CoinProvider({ children }) {
-  const [repositorie, setRepositorie] = useState('');
+export function RepositorieProvider({ children }) {
+  const [language, setLanguage] = useState([]);
   const delayedQuery = useRef(
     debounce((event) => {
-      setRepositorie(event);
-    }, 500),
+      setLanguage(event);
+    }, 1000),
   ).current;
   // Realiza um delay na request do input para evitar chamadas desnecessárias
 
@@ -18,9 +18,9 @@ export function CoinProvider({ children }) {
     delayedQuery(event.target.value);
   }
   const infoRepositories = useMemo(() => ({
-    repositorie,
+    language,
     handleInputSearchRepositorie,
-  }), [repositorie]);
+  }), [language]);
 
   return (
     <RepositorieContext.Provider

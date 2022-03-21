@@ -4,6 +4,7 @@ export const ContainerSearch = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 32px 12px;
   margin-top: 12px;

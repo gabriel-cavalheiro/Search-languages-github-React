@@ -37,7 +37,7 @@ export function CardRepo({
         {description}
       </h5>
 
-      <a href={`/${url}`}>
+      <a href={url}>
         <img src={GithubIcon} alt="Ícone do Github" />
         Ver repositório
       </a>
