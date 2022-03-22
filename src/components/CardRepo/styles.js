@@ -11,11 +11,11 @@ export const ContainerCard = styled.div`
   box-sizing: border-box;
   border-radius: 38px;
   padding: 28px;
-  transition: .3s ease;
+  transition: .5s ease;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
   }
 
   header {
