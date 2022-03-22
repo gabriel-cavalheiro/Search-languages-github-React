@@ -94,7 +94,7 @@ export const Label = styled.p`
 
 export const ContainerDescription = styled.div`
  width: 100%;
- height: 120px;
+ height: 108px;
  text-align: start;
  white-space: pre-line;
  word-wrap: break-word;
