@@ -32,7 +32,6 @@ Para iniciar a aplicação:
 ```bash
 $ yarn dev
 ```
-#
 A aplicação irá rodar em htps://localhost:3000
 #
 Para realizar o build da aplicação:
@@ -42,9 +41,9 @@ $ yarn build
 ```
 ## Features em andamento 🚧👷🏽‍♂️
 
-⚠ Resposividade para se adaptar a todos os dispositivos.
-⚠ Paginação para os demais resultados de repositórios. (suporta até o momento 30 repositórios por busca).
-⚠ Realizar testes unitários. 
+- ⚠ Resposividade para se adaptar a todos os dispositivos.
+- ⚠ Paginação para os demais resultados de repositórios. (suporta até o momento 30 repositórios por busca).
+- ⚠ Realizar testes unitários. 
 
 
 ## Licença
