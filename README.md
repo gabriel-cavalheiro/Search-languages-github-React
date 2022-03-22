@@ -39,7 +39,7 @@ $ yarn dev
 ```
 A aplicação irá rodar em htpp://localhost:3000
 #
-Para realizar o build da aplicação:
+Para realizar o build da aplicação para realizar deployment:
 
 ```bash
 $ yarn build
