@@ -15,7 +15,7 @@ export function SearchRepositories() {
 
   return (
     <ContainerSearch>
-      <h2>Digite a linguagem que deseja buscar</h2>
+      <h2>Digite a linguagem que deseja buscar:</h2>
       <SearchInput />
       {result ? (
         <p>

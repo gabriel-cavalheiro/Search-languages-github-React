@@ -46,12 +46,6 @@ export const ContainerCard = styled.div`
     text-align: start;
   }
 
-  p {
-    margin-top: 8px;
-    font-weight: 400;
-    text-align: start;
-  }
-
   a {
     display: inline-block;
     position: absolute;
@@ -96,4 +90,20 @@ export const TitleRepo = styled.div`
 
 export const Label = styled.p`
   text-align: start;
+`;
+
+export const ContainerDescription = styled.div`
+ width: 100%;
+ height: 120px;
+ text-align: start;
+ white-space: pre-line;
+ word-wrap: break-word;
+ hyphens: auto;
+ overflow: hidden;
+ text-overflow: ellipsis;
+
+ p {
+   margin-top: 8px;
+   font-weight: 400;
+  }
 `;

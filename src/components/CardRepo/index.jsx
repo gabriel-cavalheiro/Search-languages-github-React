@@ -1,5 +1,5 @@
 import {
-  ContainerCard, UserProfile, TitleRepo, Label,
+  ContainerCard, UserProfile, TitleRepo, Label, ContainerDescription,
 } from './styles';
 import Usericon from '../../assets/icon-user.svg';
 import Staricon from '../../assets/icon-star.svg';
@@ -35,9 +35,11 @@ export function CardRepo({
         </li>
       </ul>
       <Label>Descrição:</Label>
-      <p>
-        { description != null && description.lengt > 150 ? `${description.slice(0, 150)}...` : description }
-      </p>
+      <ContainerDescription>
+        <p>
+          {description}
+        </p>
+      </ContainerDescription>
 
       <a href={url} target="_blank" rel="noreferrer">
         <img src={GithubIcon} alt="Ícone do Github" />
