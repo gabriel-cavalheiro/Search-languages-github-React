@@ -59,7 +59,7 @@ export const ContainerCard = styled.div`
     bottom: 24px;
 
     &:hover {
-      filter: brightness(0.6);
+      filter: brightness(1.3);
     }
 
     > img {
