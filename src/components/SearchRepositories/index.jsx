@@ -21,7 +21,7 @@ export function SearchRepositories() {
         <p>
           {`Encontrados ${dataRepositorie.total_count} repositórios feitos em “${language}”`}
         </p>
-      ) : 'Pesquise por uma linguagem ou verifique se o nome da linguagem está correto !!!'}
+      ) : 'Verifique se o nome da linguagem está correto !!!'}
       <ListRepos>
         {result?.map((item) => (
           <CardRepo

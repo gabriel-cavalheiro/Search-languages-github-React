@@ -36,7 +36,7 @@ export function CardRepo({
       </ul>
       <Label>Descrição:</Label>
       <p>
-        { description.length > 150 ? `${description.slice(0, 150)}...` : description }
+        { description != null && description.lengt > 150 ? `${description.slice(0, 150)}...` : description }
       </p>
 
       <a href={url} target="_blank" rel="noreferrer">

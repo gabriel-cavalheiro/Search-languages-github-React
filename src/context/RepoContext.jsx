@@ -10,7 +10,7 @@ export function RepositorieProvider({ children }) {
   const delayedQuery = useRef(
     debounce((event) => {
       setLanguage(event);
-    }, 500),
+    }, 2000),
   ).current;
   // Realiza um delay na request do input para evitar chamadas desnecessárias
 
