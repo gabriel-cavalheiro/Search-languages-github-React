@@ -20,12 +20,14 @@ export function MainHero() {
         </Button>
       </SectionText>
       <CardRepo
-        title="Titulo-de-teste-para-repositorio"
+        photoUser="https://avatars.githubusercontent.com/u/83965641?v=4"
+        title="Pesquise-sua-linguagem💙"
         name="Gabriel Cavalheiro"
-        stars="2345"
-        date="2020-09-23"
+        stars="3345"
+        date="2022-03-21"
         language="javascript"
-        description="kjdbiuadfmkabdiufh ajskbl nqa iljab lflakhdciusabdlS KIuagdiAJBDilagd blAISHDGiash "
+        description="Projeto em React.js que realiza busca nos repositórios do Github pela linguagem predominante em que foi escrita."
+        url="https://github.com/gabriel-cavalheiro/Search-languages-github-react"
       />
     </ContainerMain>
   );

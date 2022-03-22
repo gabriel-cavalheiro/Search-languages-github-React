@@ -12,7 +12,6 @@ export function SearchRepositories() {
 
   const { dataRepositorie } = useApi(baseUrl, path);
   const result = dataRepositorie.items;
-  console.log(dataRepositorie);
 
   return (
     <ContainerSearch>
@@ -38,6 +37,7 @@ export function SearchRepositories() {
           />
         ))}
       </ListRepos>
+
     </ContainerSearch>
   );
 }
