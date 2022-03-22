@@ -7,9 +7,12 @@ export const RepositorieContext = createContext();
 
 export function RepositorieProvider({ children }) {
   const [language, setLanguage] = useState('');
+  const [load, setLoad] = useState(false);
+
   const delayedQuery = useRef(
     debounce((event) => {
       setLanguage(event);
+      setLoad(false);
     }, 2000),
   ).current;
   // Realiza um delay na request do input para evitar chamadas desnecessárias
@@ -17,10 +20,17 @@ export function RepositorieProvider({ children }) {
   function handleInputSearchRepositorie(event) {
     delayedQuery(event.target.value);
   }
+
+  function showLoading() {
+    setLoad(true);
+  }
+
   const infoRepositories = useMemo(() => ({
     language,
+    load,
     handleInputSearchRepositorie,
-  }), [language]);
+    showLoading,
+  }), [language, load]);
 
   return (
     <RepositorieContext.Provider

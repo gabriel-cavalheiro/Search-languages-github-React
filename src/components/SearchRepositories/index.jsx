@@ -2,11 +2,14 @@ import { useContext } from 'react';
 import { RepositorieContext } from '../../context/RepoContext';
 import { useApi } from '../../hooks/useApi';
 import { CardRepo } from '../CardRepo';
+import { Loading } from '../Loading';
+
 import { SearchInput } from '../SearchInput';
 import { ContainerSearch, ListRepos } from './styles';
 
 export function SearchRepositories() {
-  const { language } = useContext(RepositorieContext);
+  const { language, load } = useContext(RepositorieContext);
+
   const baseUrl = 'https://fetch-languages-github.herokuapp.com';
   const path = `/languages/${language}&desc`;
 
@@ -23,19 +26,22 @@ export function SearchRepositories() {
         </p>
       ) : 'Verifique se o nome da linguagem está correto !!!'}
       <ListRepos>
-        {result?.map((item) => (
-          <CardRepo
-            key={item.id}
-            photoUser={item.owner.avatar_url}
-            title={item.name}
-            name={item.owner.login}
-            stars={item.stargazers_count}
-            date={item.created_at}
-            language={item.language}
-            description={item.description}
-            url={item.html_url}
-          />
-        ))}
+        {load === true
+          ? <Loading />
+          : result?.map((item) => (
+            <CardRepo
+              key={item.id}
+              photoUser={item.owner.avatar_url}
+              title={item.name}
+              name={item.owner.login}
+              stars={item.stargazers_count}
+              date={item.created_at}
+              language={item.language}
+              description={item.description}
+              url={item.html_url}
+            />
+          ))}
+
       </ListRepos>
 
     </ContainerSearch>
