@@ -6,11 +6,11 @@ import { debounce } from 'lodash';
 export const RepositorieContext = createContext();
 
 export function RepositorieProvider({ children }) {
-  const [language, setLanguage] = useState([]);
+  const [language, setLanguage] = useState('');
   const delayedQuery = useRef(
     debounce((event) => {
       setLanguage(event);
-    }, 1000),
+    }, 500),
   ).current;
   // Realiza um delay na request do input para evitar chamadas desnecessárias
 

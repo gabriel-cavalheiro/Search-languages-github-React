@@ -6,6 +6,8 @@ export const ContainerMain = styled.main`
   padding: 25px;
   justify-content: space-between;
   position: relative;
+  transform: translateY(104px);
+  margin-bottom: 48px;
 `;
 
 export const SectionText = styled.section`

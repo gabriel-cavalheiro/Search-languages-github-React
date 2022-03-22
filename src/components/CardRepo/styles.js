@@ -1,15 +1,22 @@
 import styled from 'styled-components';
 
 export const ContainerCard = styled.div`
-  width: 408px;
-  height: 466px;
+  width: 400px;
+  height: 470px;
+  position: relative;
 
   background: rgba(250, 250, 250, 0.1);
+  backdrop-filter: blur(25px);
   border: 2px solid #FAFAFA;
   box-sizing: border-box;
-  backdrop-filter: blur(25px);
   border-radius: 38px;
   padding: 28px;
+  transition: .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   header {
     width: 100%;
@@ -27,7 +34,7 @@ export const ContainerCard = styled.div`
     margin-top: 12px;
 
     li {
-      margin: 12px 0px;
+      margin: 8px 0px;
     }
 
     img {
@@ -36,18 +43,26 @@ export const ContainerCard = styled.div`
     }
   }
 
-  h5 {
+  span {
+    text-align: start;
+  }
+
+  p {
     margin-top: 8px;
     font-weight: 400;
+    text-align: start;
   }
 
   a {
     display: inline-block;
+    position: absolute;
     width: 100%;
     color: #CE79EF;
     transition: 0.5s ease;
     text-align: center;
     margin-top: 18px;
+    left: 0px;
+    bottom: 24px;
 
     &:hover {
       filter: brightness(0.6);
@@ -56,11 +71,13 @@ export const ContainerCard = styled.div`
     > img {
       margin-right: 8px;
     }
+
   }
   `;
 
 export const UserProfile = styled.div`
-    background-color: #ccc;
+    background: ${({ photoUser }) => `url(${photoUser}) no-repeat center`};
+    background-size: cover;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -70,8 +87,13 @@ export const UserProfile = styled.div`
 export const TitleRepo = styled.div`
     text-align: center;
     transition: 0.5s ease;
+    cursor: pointer;
 
     &:hover {
       filter: brightness(0.6);
     }
   `;
+
+export const Label = styled.p`
+  text-align: start;
+`;

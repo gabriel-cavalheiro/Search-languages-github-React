@@ -5,5 +5,5 @@ export const ContainerFooter = styled.footer`
   padding: 12px;
   text-align: center;
   border-top: 1px solid #205686;
-  margin-top: 88px;
+  margin-top: 120px;
 `;

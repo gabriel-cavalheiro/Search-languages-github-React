@@ -15,4 +15,5 @@ export const Search = styled.input`
 
   outline: none;
   padding: 12px;
+  margin-bottom: 24px;
   `;

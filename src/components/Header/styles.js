@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-  width: 1440px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  position: fixed;
+  z-index: 999;
+  background: rgba(250, 250, 250, 0.1);
+  backdrop-filter: blur(12px);
   padding: 18px 12px;
+  top: 0;
+  right: 0;
 
   border-bottom: 1px solid #205686;
 `;
