@@ -12,7 +12,6 @@ export const ContainerCard = styled.div`
   border-radius: 38px;
   padding: 28px;
   transition: .5s ease;
-  cursor: pointer;
 
   &:hover {
     transform: scale(1.03);
@@ -57,6 +56,7 @@ export const ContainerCard = styled.div`
     display: inline-block;
     position: absolute;
     width: 100%;
+    cursor: pointer;
     color: #CE79EF;
     transition: 0.5s ease;
     text-align: center;
