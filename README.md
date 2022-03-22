@@ -46,7 +46,7 @@ $ yarn build
 ```
 ## Features em andamento 🚧👷🏽‍♂️
 
-- ⚠ Resposividade para se adaptar a todos os dispositivos.
+- ⚠ Responsividade para se adaptar a todos os dispositivos.
 - ⚠ Paginação para os demais resultados de repositórios. (suporta até o momento 30 repositórios por busca).
 - ⚠ Realizar testes unitários. 
 
