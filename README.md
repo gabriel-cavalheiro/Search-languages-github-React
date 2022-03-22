@@ -35,7 +35,7 @@ Para iniciar a aplicação:
 ```bash
 $ yarn dev
 ```
-A aplicação irá rodar em htps://localhost:3000
+A aplicação irá rodar em htpp://localhost:3000
 #
 Para realizar o build da aplicação:
 
