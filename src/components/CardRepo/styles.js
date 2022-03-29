@@ -52,7 +52,7 @@ export const ContainerCard = styled.div`
     width: 100%;
     cursor: pointer;
     color: #CE79EF;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
     text-align: center;
     margin-top: 18px;
     left: 0px;
